@@ -31,6 +31,9 @@
                                 <rect key="frame" x="167.33333333333334" y="194.33333333333334" width="58.666666666666657" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="猜拳"/>
+                                <connections>
+                                    <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jPa-JQ-vbv"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vQD-UG-p5u">
                                 <rect key="frame" x="128" y="153.33333333333334" width="137" height="32"/>
@@ -86,6 +89,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="scs-IR-Wkm" secondAttribute="trailing" constant="10" id="t6M-V3-9iW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mySelectLabel" destination="IWR-Eo-QAD" id="fHj-F3-ewb"/>
+                        <outlet property="nameField" destination="scs-IR-Wkm" id="xFL-bZ-jDZ"/>
+                        <outlet property="pcSelectLabel" destination="bt3-Db-o75" id="hTX-PK-yyK"/>
+                        <outlet property="textLabel" destination="NjR-8U-pxK" id="5wC-zs-qV2"/>
+                        <outlet property="userName" destination="xRw-xR-XYL" id="7XO-Nc-pcm"/>
+                        <outlet property="userSelectSegment" destination="vQD-UG-p5u" id="Uji-wg-SRe"/>
+                        <outlet property="winnerLabel" destination="I4L-da-AB2" id="yOA-s5-PC4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
